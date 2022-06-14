@@ -12,7 +12,7 @@ _I am going to use Next.js for the frontend and TailwindCSS for the styling._<br
 _If you don’t know about Next.js, it is a JavaScript framework built on top of React and provides features like server-side_<br/>
 _rendering, static site generation. TailwindcSS is a framework that provides utility classes to speed up the development process._<br/>
 _Let’s find an API that we can use to find the BMI information. Go to RapidAPI Hub and create an account if you haven’t_<br/>
-_already and then search for “bmi _api” in the search section._<br/>
+_already and then search for “bmi api” in the search section._<br/>
 _You will see different search results related to the BMI API. For this piece, I am using Body Mass Index (BMI) Calculator API._<br/>
 _To use this API, you need to subscribe to it first. You can do this by clicking on Subscribe to Test button._<br/>
 _once you click the button, you will be redirected to another page where different available subscription packages will be shown._<br/>
@@ -50,29 +50,29 @@ _**RAPIDAPI** - Rapid API_<br/>
 
 _Contribute to BMI CALCULATOR app by cloning this repository_.
 
-1. Download the `bmi-calculator-app` directory on this repository.
+1. Download the `bmi-calculator-app-main.zip` directory on this repository.
 
 2. Unzip the downloaded file and navigate to the working directory.
 
-```bash
-cd RapidAPI\ DevRel-Examples-External\ main\ bmi-calculator-app/
+```bash or your Terminal Code Editor
+cd \ bmi-calculator-app-main/
 ```
 
 3. Install dependencies
 
-```bash
+```bash or your Terminal Code Editor
 npm install
 ```
 
 4. Create `.env.local` file in root and add your RapidAPI key.
 
-```bash
+```bash or your Terminal Code Editor
 NEXT_PUBLIC_RAPIDAPI_KEY=YOUR_RAPID_API_KEY
 ```
 
 5. Run the app
 
-```bash
+```bash or your Terminal Code Editor
 npm run dev
 ```
 
