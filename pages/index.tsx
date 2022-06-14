@@ -12,7 +12,7 @@ export default function Home() {
 
   // Fetch BMI
 
-  const fetchBMI = async e => {
+  const fetchBMI = async (e) => {
 		e.preventDefault();
 		try {
 			setBtnText('Calculating...');
@@ -66,12 +66,12 @@ export default function Home() {
 			</div>
 			<div className="flex flex-col mt-10 justify-end h-36 md:h-24">
 				<p className="block mb-10 text-center text-primary text-xs">
-					Made by RapidAPI DevRel Team -{' '}
+        Body Mass Index -{' '}
 					<a
 						className="hover:text-danger"
 						href="https://github.com/RapidAPI/DevRel-Examples-External"
 					>
-						See more examples like this
+						&copy; 2022 | Made with ❤️ by Creative Lightbox
 					</a>
 				</p>
 			</div>
