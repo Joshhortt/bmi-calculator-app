@@ -1,12 +1,33 @@
 
 import {useState} from 'react';
+import axios from 'axios';
 
 
 export default function Home() {
 
   const [weight, setWeight] = useState('80');
 	const [height, setHeight] = useState('1.80');
+  const [btnText, setBtnText] = useState('Calculate');
 	const [bmi, setBmi] = useState(null);
+
+  // Fetch BMI
+
+  const fetchBMI = async e => {
+		e.preventDefault();
+		try {
+			setBtnText('Calculating...');
+			const response = await axios.get(`/api/bmi`, {
+				params: {
+					weight,
+					height
+				}
+			});
+			setBmi(response.data.bmi);
+		} catch (err) {
+			console.log(err);
+		}
+		setBtnText('Calculate');
+	};
 
 	return (
 		<div className="flex flex-col items-center">
@@ -31,10 +52,28 @@ export default function Home() {
             value={height}
 						onChange={e => setHeight(e.target.value)}
           />
-					<button className="outline-none border border-danger font-bold font-raleway ml-4 px-12 py-2 rounded-sm bg-danger text-lightGrey transition duration-300 hover:bg-bc hover:text-primary md:ml-0 md:mt-4">
-						Calculate
+					<button className="outline-none border border-danger font-bold font-raleway ml-4 px-12 py-2 rounded-sm bg-danger text-lightGrey transition duration-300 hover:bg-bc hover:text-primary md:ml-0 md:mt-4" 
+          onClick={fetchBMI}
+          >
+            {btnText}
 					</button>
 				</form>
+        {bmi && (
+					<div className="border border-secondary text-secondary mt-16 md:w-4/5">
+						<p className="px-4 py-4 tracking-wide leading-8">{`Your Body Mass Index: ${bmi}`}</p>
+					</div>
+				)}
+			</div>
+			<div className="flex flex-col mt-10 justify-end h-36 md:h-24">
+				<p className="block mb-10 text-center text-primary text-xs">
+					Made by RapidAPI DevRel Team -{' '}
+					<a
+						className="hover:text-danger"
+						href="https://github.com/RapidAPI/DevRel-Examples-External"
+					>
+						See more examples like this
+					</a>
+				</p>
 			</div>
 		</div>
 	);
