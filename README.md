@@ -9,14 +9,16 @@ _By **Josh Hortt**_
 
 _The technology stack to build this application is the JAMstack._<br/>
 _I am going to use Next.js for the frontend and TailwindCSS for the styling._<br/>
-_If you don’t know about Next.js, it is a JavaScript framework built on top of React and provides features like server-side rendering, static site_<br/> _generation, etc. Tailwind is a CSS framework that provides utility classes to speed up the development process._<br/>
-_Let’s find an API that we can use to find the BMI information. Go to RapidAPI Hub and create an account if you haven’t already and then search_<br/>
-_for “bmi _api” in the search section._<br/>
+_If you don’t know about Next.js, it is a JavaScript framework built on top of React and provides features like server-side_<br/>
+_rendering, static site generation. TailwindcSS is a framework that provides utility classes to speed up the development process._<br/>
+_Let’s find an API that we can use to find the BMI information. Go to RapidAPI Hub and create an account if you haven’t_<br/>
+_already and then search for “bmi _api” in the search section._<br/>
 _You will see different search results related to the BMI API. For this piece, I am using Body Mass Index (BMI) Calculator API._<br/>
 _To use this API, you need to subscribe to it first. You can do this by clicking on Subscribe to Test button._<br/>
 _once you click the button, you will be redirected to another page where different available subscription packages will be shown._<br/>
 _Let’s go with the free one for now._<br/>
-_After all this, you will be redirected back to the original page. Here you will have a rapidapi-key. Save it. It will be used later in the app._<br/>
+_After all this, you will be redirected back to the original page. Here you will have a rapidapi-key. Save it somewhere._<br/>
+_It will be used later during development inside your '.env' file._<br/>
 
 ### Contribute
 
