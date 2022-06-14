@@ -1,9 +1,3 @@
-![cover](assets/cover.png)
-
-<div align="center">
-	<h2>BMI Calculator App</h2>
-</div>
-
 # _BMI CALCULATOR APP_
 
 _This Application is called BMI calculator app that will take the user’s weight and height and calculate his BMI._<br/>
@@ -13,13 +7,16 @@ _By **Josh Hortt**_
 
 ## Description
 
-_It's build for teaching Javascript ES6 purposes to 11 th Grade High school students who are studying IT_.<br/>
-_There is a Home page which you can choose from three different musical instruments_.<br/>
-_Each musical Instrument when clicked leads you to different page where you can play around with musical sounds._<br/>
-_Click any button with your mouse or press the keyboard letter to obtain the sound._<br/>
-_After you try a musical instrument and you want to try another, just click on the Browser return button_.<br/>
-_It will take you back to the Home Page again_.<br/>
-_Enjoy, and have Fun!_.<br/>
+_The technology stack to build this application is the JAMstack._<br/>
+_I am going to use Next.js for the frontend and TailwindCSS for the styling._<br/>
+_If you don’t know about Next.js, it is a JavaScript framework built on top of React and provides features like server-side rendering, static site_<br/> _generation, etc. Tailwind is a CSS framework that provides utility classes to speed up the development process._<br/>
+_Let’s find an API that we can use to find the BMI information. Go to RapidAPI Hub and create an account if you haven’t already and then search_<br/>
+_for “bmi _api” in the search section._<br/>
+_You will see different search results related to the BMI API. For this piece, I am using Body Mass Index (BMI) Calculator API._<br/>
+_To use this API, you need to subscribe to it first. You can do this by clicking on Subscribe to Test button._<br/>
+_once you click the button, you will be redirected to another page where different available subscription packages will be shown._<br/>
+_Let’s go with the free one for now._<br/>
+_After all this, you will be redirected back to the original page. Here you will have a rapidapi-key. Save it. It will be used later in the app._<br/>
 
 ### Contribute
 
